@@ -28,9 +28,20 @@ public class PlayerController : MonoBehaviour
         //Player jump setup
         float yVelocity = _moveInput.y;
 
+        //Player movement
+        //_moveInput.x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        //_moveInput.z = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+
+        Vector3 forwardDirection = transform.forward * Input.GetAxis("Vertical");
+        Vector3 horizontalDirection = transform.right * Input.GetAxis("Horizontal");
+
+        _moveInput = (forwardDirection + horizontalDirection).normalized;
+        _moveInput *= moveSpeed;
+
+        //Apply jumping
         _moveInput.y = yVelocity;
 
-        _moveInput.y = Physics.gravity.y * gravityModifier * Time.deltaTime;
+        _moveInput.y += Physics.gravity.y * gravityModifier * Time.deltaTime;
         
         //Check if character controller is on the ground
         if(_characterController.isGrounded)
@@ -41,20 +52,11 @@ public class PlayerController : MonoBehaviour
         //Check if player can jump
         _canPlayerJump = Physics.OverlapSphere(groundCheckpoint.position, 0.5f, whatIsGround).Length > 0; 
 
+        //Make player jump
         if(Input.GetKeyDown(KeyCode.Space) && _canPlayerJump)
         {
             _moveInput.y = jumpForce;
         }
-
-        //Player movement
-        //_moveInput.x = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        //_moveInput.z = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-
-        Vector3 forwardDirection = transform.forward * Input.GetAxis("Vertical");
-        Vector3 horizontalDirection = transform.right * Input.GetAxis("Horizontal");
-
-        _moveInput = (forwardDirection + horizontalDirection).normalized;
-        _moveInput *= moveSpeed;
 
         _characterController.Move(_moveInput * Time.deltaTime);
 
