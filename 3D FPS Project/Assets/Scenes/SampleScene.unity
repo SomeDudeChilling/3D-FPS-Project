@@ -12030,6 +12030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target_stand_B
       objectReference: {fileID: 0}
+    - target: {fileID: 8917895872194137715, guid: f407862e2139b4a4baf5dfc2d52cd629, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -19,4 +19,22 @@ public class Bullet : MonoBehaviour
     {
         _rigidbody.velocity = transform.forward * moveSpeed;
     }
+
+    void  OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("TargetStanding"))
+        {
+            Debug.Log("I hit the standing target.");
+            //add code to add hit points to your scoreboard
+            //gray out standing target
+            other.gameObject.SetActive(false);
+        }
+
+        if(other.gameObject.CompareTag("TargetFloating"))
+        {
+            Debug.Log("I hit the floating target.");
+            //add code to add hit points to your scoreboard
+            Destroy(this.gameObject);
+        }
+    }
 }
