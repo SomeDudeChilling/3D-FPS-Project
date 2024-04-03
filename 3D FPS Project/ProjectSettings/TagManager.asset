@@ -8,6 +8,7 @@ TagManager:
   - TargetFloating
   - TargetStanding
   - Target Floating
+  - AmmoBox
   layers:
   - Default
   - TransparentFX
