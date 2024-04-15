@@ -46,6 +46,11 @@ public class Timer : MonoBehaviour
         _isTimerRunning = false;
     }
 
+    public float GetTimeRemaining()
+    {
+        return timeRemaining;
+    }
+
     private void DisplayTime(float timeToDisplay)
     {
         timeToDisplay += 1;
