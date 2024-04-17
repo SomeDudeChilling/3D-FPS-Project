@@ -7,6 +7,11 @@ public class Menus : MonoBehaviour
 {
     public int levelOne;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void OnPlayButtonPressed()
     {
         SceneManager.LoadScene(levelOne);

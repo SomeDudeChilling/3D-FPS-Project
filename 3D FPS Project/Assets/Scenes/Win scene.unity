@@ -844,7 +844,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2027415444}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6635971014250254154}
+        m_TargetAssemblyTypeName: Menus, Assembly-CSharp
+        m_MethodName: OnPlayButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2027415444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +895,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027415441}
   m_CullTransparentMesh: 1
+--- !u!1001 &6635971014250254153
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2248679475093860700, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_Name
+      value: Scene Session
+      objectReference: {fileID: 0}
+    - target: {fileID: 3860565081453152259, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: levelOne
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.20044
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.6626
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.763844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069237322321718438, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+--- !u!114 &6635971014250254154 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3860565081453152259, guid: 8fa9f0e9fbdea492f916bfd51d2460b1, type: 3}
+  m_PrefabInstance: {fileID: 6635971014250254153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e31d4c148a9c4a608b3d12beb85a72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -891,3 +975,4 @@ SceneRoots:
   - {fileID: 1799247930}
   - {fileID: 1451930401}
   - {fileID: 1312075444}
+  - {fileID: 6635971014250254153}
