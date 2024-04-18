@@ -13148,6 +13148,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2881969272357076143, guid: 1e6a7e9f563e8449691eb380c68178c4, type: 3}
+      propertyPath: m_text
+      value: Level 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13323,6 +13327,14 @@ PrefabInstance:
     - target: {fileID: 1909578979067554595, guid: 8e32e4c22ac8a4a93913aed2b80013ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3552359998101129152, guid: 8e32e4c22ac8a4a93913aed2b80013ba, type: 3}
+      propertyPath: winScene
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3552359998101129152, guid: 8e32e4c22ac8a4a93913aed2b80013ba, type: 3}
+      propertyPath: loseScene
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3552359998101129152, guid: 8e32e4c22ac8a4a93913aed2b80013ba, type: 3}
       propertyPath: targetText

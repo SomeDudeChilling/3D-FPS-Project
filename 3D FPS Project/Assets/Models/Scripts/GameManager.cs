@@ -6,11 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
     public TextMeshProUGUI targetText;
     public int winScene;
     public int loseScene;
     private int _targetamount;
+    //private string _sceneName = "Name";
     private Timer _timer;
+
+    //void Awake()
+    //{
+        //if(Instance != null && Instance != this)
+        //{
+        //    Destroy(this);
+        //}
+        //else
+        //{
+        //    Instance = this;
+        //    DontDestroyOnLoad(this.gameObject);
+        //}
+    //}
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +58,10 @@ public class GameManager : MonoBehaviour
             GameObject.Find("Game Manager").GetComponent<Timer>().EndGameTimer();
 
             //Send player to the win scene
-            SceneManager.LoadScene(winScene);
+            //SceneManager.LoadScene(winScene);
+
+            //Send player to next scene in build setting
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
